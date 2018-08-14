@@ -1,0 +1,26 @@
+<div *ngIf="false">
+<ul>
+    <li *ngFor="let message of mail.messages">
+        {{message.text}}
+    </li>
+</ul>
+<ul>
+    
+    <app-simple-form 
+        *ngFor="let message of mail.messages"
+        [message]="message.text"
+        (update)="onUpdate(message.id, $event.text)">
+        
+    </app-simple-form>
+    
+</ul>
+</div>
+
+<div>
+    <h2>Wikipedia Search</h2>
+    <input (input)="term$.next($event.target.value)">
+    <ul>
+        <li *ngFor="let item of items">{{item}}</li>
+    </ul>
+</div>
+<router-outlet></router-outlet>

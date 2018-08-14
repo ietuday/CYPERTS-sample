@@ -1,0 +1,35 @@
+.main-container{
+  padding-top: 10%;
+}
+
+.container-content {
+  min-height: 400px;
+  width: 350px;
+}
+
+.login-header {
+  padding: 17px;
+  color: #f5deb3;
+  font-weight: bold;
+  border-bottom: 1px solid #d4d3de;
+  font-size: 24px;
+  background: #3f51b5;
+
+}
+
+.login-content {
+  padding: 20px 50px;
+  background: white;
+}
+
+a{
+    margin-left: 32%;
+}
+
+.note{
+  margin-left: 10%;
+}
+
+.mat-raised-button.mat-primary{
+  background-color: #3f51b5;
+}

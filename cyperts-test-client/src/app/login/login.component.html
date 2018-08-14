@@ -1,0 +1,35 @@
+<div class="main-container">
+  <div fxLayoutAlign="center">
+    <div class="container-content mat-elevation-z2">
+      <div class="login-header" fxLayoutAlign="center">
+          Cyperts
+      </div>
+      <div class="login-content">
+        <form [formGroup]="form" (ngSubmit)="onLogin()">
+          <div>
+            <mat-form-field fxFlex>
+              <input matInput placeholder="Email" type="email" formControlName="email">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field fxFlex>
+              <input matInput placeholder="Password" type="password" formControlName="password">
+            </mat-form-field>
+          </div>
+          <br>
+          <div>
+            <mat-checkbox>Remember Me</mat-checkbox>
+          </div>
+          <br>
+          <div>
+
+            <button color="primary" mat-button mat-raised-button matTooltip="Login" matTooltipPosition="below" [disabled]="!form.valid" fxFlex>Login</button>
+          </div>
+
+            <p class="note">Create an Account on Cyperts</p>
+             <a [routerLink]="['/register']">Sign Up here</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
